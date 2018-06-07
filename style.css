@@ -149,8 +149,6 @@ h1 {
   padding-left: 5px;
 }
 
-/* = Sidebar Left Side =  */
-
 .sidebar-left ul{
   padding-left: 3px;
 }
@@ -175,6 +173,7 @@ h1 {
 .green-checkbox{
   color: #099880
 }
+
 .sidebar-left li{
   border-left: 2px solid transparent;
 }
@@ -575,6 +574,8 @@ h5 i{
   }
   .circular-chart{
     min-width: 6rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .social i{
     padding-right: 2px;

@@ -465,72 +465,6 @@ th .fa-pencil-alt {
 
 /* ========= Bottom Right Nav =========  */
 
-
-.right-side-nav-container {
-  padding: 0 50px 20px 50px;
-}
-
-.social {
-  border-radius: 5px;
-  color: #9fadc4;
-  font-size: 1rem;
-  margin-bottom: 15px;
-  padding: 15px;
-  text-align: left;
-  width: 100%;
-}
-
-.social:hover {
-  cursor: pointer;
-  filter: brightness(120%);
-  transition: 300ms ease-in-out;
-}
-
-.social i{
-  padding-right: 8rem;
-}
-
-.facebook-link {
-  background-color: #4c72c3;
-  border: none;
-  color: white;
-}
-
-.twitter-link {
-  background-color: #00aaef;
-  border: none;
-  color: white;
-}
-
-.linkedin-link {
-  background-color: #0384bf;
-  border: none;
-  color: white;
-}
-
-h5 {
-  color: #727a81;
-  font-size: 1rem;
-}
-
-h5 i{
-  padding-right: 5px;
-}
-
-.info-text {
-  color: #727a81;
-  font-size: 0.9rem;
-}
-
-.link-input {
-  border: none;
-  font-size: 1rem;
-  margin: 0;
-  padding-left: 1rem;
-  height: 54px;
-  width: 80%
-}
-
 .copy-button {
   background-color: #77ced6;
   border-radius: 0 3px 3px 0;
@@ -552,8 +486,72 @@ h5 i{
   color: #a9afb8;
 }
 
+.facebook-link {
+  background-color: #4c72c3;
+  border: none;
+}
+
+h5 {
+  color: #727a81;
+  font-size: 1rem;
+}
+
+h5 i{
+  padding-right: 5px;
+}
+
+.info-text {
+  color: #727a81;
+  font-size: 0.9rem;
+}
+
+.linkedin-link {
+  background-color: #0384bf;
+  border: none;
+  color: white;
+}
+
+.link-input {
+  border: none;
+  font-size: 1rem;
+  height: 54px;
+  margin: 0;
+  padding-left: 1rem;
+  width: 80%
+}
+
 .link-input.email {
   width: 100%
+}
+
+.right-side-nav-container {
+  padding: 0 50px 20px 50px;
+}
+
+.social {
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+}
+
+.social:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+  transition: 300ms ease-in-out;
+}
+
+.social i{
+  padding-right: 8rem;
+}
+
+.twitter-link {
+  background-color: #00aaef;
+  border: none;
+  color: white;
 }
 
 @media only screen and (max-width: 1150px){
@@ -571,41 +569,35 @@ h5 i{
     font-size: .9rem;
   }
 
+  .sidebar{
+    display:none;
+  }
+
   table{
     margin: 1rem;
   }
 
-  .sidebar{
-    display:none;
-  }
+
 }
 
 @media only screen and (max-width: 900px){
-  .secondary-content {
-    display: grid;
-    grid-template-columns: 30rem 1fr;
+
+ .apps-day-secret{
+    display: inline-block;
   }
-  
+
+  .applicants-per-day{
+    display: none;
+  }
+
   .circular-chart{
     min-width: 6rem;
     margin-left: auto;
     margin-right: auto;
   }
 
- .apps-day-secret{
-    display: inline-block;
-  }
-
-  .social i{
-    padding-right: 2px;
-  }
-
   .copy-button{
     font-size: .8rem;
-  }
-
-  .right-side-nav-container {
-    padding: 0 20px 10px 20px;
   }
 
   .position-container{
@@ -614,13 +606,22 @@ h5 i{
     padding-left: 1rem;
   }
 
+  .right-side-nav-container {
+    padding: 0 20px 10px 20px;
+  }
+
+  .secondary-content {
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+  }
+  
+  .social i{
+    padding-right: 2px;
+  }
+
   .summary-container{
     display: grid;
     grid-template-columns: 1fr;
-  }
-
-  .applicants-per-day{
-    display: none;
   }
 
   .totals{
@@ -629,32 +630,17 @@ h5 i{
 }
 
 @media only screen and (max-width: 700px){
-
-  .secondary-content {
-    display: grid;
-    grid-template-columns: 1fr
+  
+  .copy-button{
+    font-size: 1rem;
   }
-
-  .position-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-left: 1rem;
-  }
-
+  
   .description-text{
     font-size: .7rem;
   }
-
-  .social {
-    width: 32%;
-  }
-
+  
   .main-nav{
     display: none;
-  }
-
-  .copy-button{
-    font-size: 1rem;
   }
 
   .navigation{
@@ -676,24 +662,32 @@ h5 i{
     transition: 300ms ease-in-out;
   }
 
+  .position-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 1rem;
+  }
+
+  .secondary-content {
+    display: grid;
+    grid-template-columns: 1fr
+  }
+
+  .social{
+    width: 32%;
+    font-size: .8rem;
+  }
+  
   table {
     margin: 1rem;
   }
 
-  .social{
-    font-size: .8rem;
-  }
 }
 
 @media only screen and (max-width: 614px){
 
   .circular-chart{
     min-width: 10rem;
-  }
-
-  .svg-box {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .circle-graphs {
@@ -705,5 +699,10 @@ h5 i{
 
   .position-container{
     padding: .5rem;
+  }
+
+  .svg-box {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

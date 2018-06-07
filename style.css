@@ -175,6 +175,9 @@ h1 {
 .green-checkbox{
   color: #099880
 }
+.sidebar-left li{
+  border-left: 2px solid transparent;
+}
 
 .sidebar-left li:hover{
   border-left: 2px solid #16a4fa;

@@ -235,7 +235,7 @@ h1 {
 }
 
 
-/* ========= Main nav =========  */
+/* == Main nav ===  */
 
 main {
   background-color: #edf2f6;
@@ -600,6 +600,10 @@ h5 i{
     padding-right: 2px;
   }
 
+  .copy-button{
+    font-size: .8rem;
+  }
+
   .right-side-nav-container {
     padding: 0 20px 10px 20px;
   }
@@ -649,6 +653,10 @@ h5 i{
     display: none;
   }
 
+  .copy-button{
+    font-size: 1rem;
+  }
+
   .navigation{
     display: block;
     padding: 4px;
@@ -694,5 +702,4 @@ h5 i{
   .position-container{
     padding: .5rem;
   }
-  
 }

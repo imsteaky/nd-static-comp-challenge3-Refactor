@@ -126,6 +126,7 @@ ul{
 .fa-angle-down:hover {
   color: #fcfafb;
   cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 
 h1 {
@@ -295,8 +296,8 @@ hr {
 .dividers i:hover {
   color: #16a4fa;
   cursor: pointer;
+  transition: 300ms ease-in-out;
 }
-
 
 /* ========= Circle Chart Nightmare =========  */
 
@@ -379,6 +380,7 @@ hr {
 .total:hover {
   background-color: #16a4fa;
   color: #fcfafb;
+  transition: 300ms ease-in-out;
 }
 
 /* == Bar chart == */
@@ -454,6 +456,7 @@ td {
 .edit-btn:hover {
   background-color: #9fadc4;
   cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 
 th .fa-pencil-alt {
@@ -480,10 +483,11 @@ th .fa-pencil-alt {
 .social:hover {
   cursor: pointer;
   filter: brightness(120%);
+  transition: 300ms ease-in-out;
 }
 
 .social i{
-  padding-right: 90px;
+  padding-right: 8rem;
 }
 
 .facebook-link {
@@ -541,6 +545,7 @@ h5 i{
 .copy-button:hover {
   cursor: pointer;
   filter: brightness(110%);
+  transition: 300ms ease-in-out;
 }
 
 .copy-button::placeholder {
@@ -660,6 +665,7 @@ h5 i{
   .navigation:hover{
     background-color: #00aaef;
     color: white;
+    transition: 300ms ease-in-out;
   }
 
   table {

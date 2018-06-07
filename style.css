@@ -706,4 +706,9 @@ h5 i{
     margin-left: auto;
     margin-right: auto;
   }
+
+  #bar-graph {
+    max-width: 80%;
+    width: auto;
+  }
 }

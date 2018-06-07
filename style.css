@@ -552,9 +552,11 @@ h5 i{
     display: grid;
     grid-template-columns: 1fr;
   }
+  
   .circular-chart{
     min-width: 8rem;
   }
+
   .main-lis{
     font-size: .9rem;
   }

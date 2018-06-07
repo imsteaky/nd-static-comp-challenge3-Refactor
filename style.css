@@ -27,6 +27,11 @@ ul{
   display: none;
 }
 
+.apps-day-secret{
+  display: none;
+  margin: 2px 0;
+}
+
 .top-nav {
   background-color: #fff;
   border-bottom: 1px solid #c3c9d3;
@@ -580,6 +585,10 @@ h5 i{
     min-width: 6rem;
     margin-left: auto;
     margin-right: auto;
+  }
+
+ .apps-day-secret{
+    display: inline-block;
   }
 
   .social i{

@@ -200,10 +200,6 @@ h1 {
 
 /* == Right side buttons ==  */
 
-.buttons-container {
-  float: right;
-}
-
 .open {
   border-radius: 20px;
   padding: 5px 10px;
@@ -272,20 +268,23 @@ main {
   border-bottom: 4px solid #16a4fa;
 }
 
+/* ========= Hr dividers =========  */
+
 .dividers {
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2rem 1fr;
+  align-self: start;
+  margin-bottom: 2rem;
 }
 
-.dividers i {
+.fa-chevron-circle-up {
   color: #b9b8be;
-  margin-top: 20px;
+  font-size: 1rem;
 }
 
 hr {
-  margin: 2rem 2rem;
-  width: 50%;
+  width: 90%;
+  font-size: 1rem;
 }
 
 .dividers i:hover {
@@ -318,7 +317,6 @@ hr {
   font-size: 0.5rem;
   margin-left: 20px;
   min-width: 10rem;
-  max-width: 15rem;
 }
 
 .circle-explain {
@@ -364,14 +362,13 @@ hr {
 .total {
   border-radius: 50px;
   cursor: pointer;
-  padding: 8px;
   font-size: .7rem;
-  margin-left: 13rem;
+  padding: 9px;
   text-transform: uppercase;
 }
 
-.totals-buttons {
-  padding: 2rem;
+.totals, .totals2{
+  text-align: center;
 }
 
 .total:hover {
@@ -381,17 +378,24 @@ hr {
 
 /* == Bar chart == */
 
-#bar-graph {
-  margin-left: 5rem;
-  max-width: 30rem;
+.bar-graph-container{
+  text-align: center
 }
 
-/* ========= Table =========  */
+#bar-graph {
+  max-width: 100%;
+  width: auto;
+}
+
+
+/* ========= Bottom Half =========  */
 
 .secondary-content {
   display: grid;
   grid-template-columns: 1fr 30rem;
 }
+
+/* ========= Table =========  */
 
 table {
   background-color: #fff;
@@ -500,7 +504,7 @@ h5 {
   font-size: 1rem;
 }
 
-h5 i {
+h5 i{
   padding-right: 5px;
 }
 
@@ -516,10 +520,6 @@ h5 i {
   padding-left: 1rem;
   height: 54px;
   width: 80%
-}
-
-.link-input.email {
-  width: 100%
 }
 
 .copy-button {
@@ -540,4 +540,97 @@ h5 i {
 
 .copy-button::placeholder {
   color: #a9afb8;
+}
+
+.link-input.email {
+  width: 100%
+}
+
+@media only screen and (max-width: 1150px){
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .circular-chart{
+    min-width: 8rem;
+  }
+  .main-lis{
+    font-size: .9rem;
+  }
+
+  table{
+    margin: 1rem;
+  }
+
+  .sidebar{
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .secondary-content {
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+  }
+  .circular-chart{
+    min-width: 6rem;
+  }
+  .social i{
+    padding-right: 2px;
+  }
+  .main-lis{
+    font-size: .6rem;
+  }
+  .right-side-nav-container {
+    padding: 0 20px 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .secondary-content {
+    display: grid;
+    grid-template-columns: 1fr
+  }
+  .circular-chart{
+    min-width: 4rem;
+  }
+  .position-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 1rem;
+  }
+  .social {
+    width: 32%;
+  }
+  table {
+    margin: 1rem;
+  }
+  .main-lis{
+    font-size: .3rem;
+  }
+}
+
+@media only screen and (max-width: 550px){
+
+  .circular-chart{
+    min-width: 10rem;
+  }
+  .svg-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .summary-container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .circle-graphs {
+    display: flex;
+    flex-direction: column;
+    max-width: 10rem;
+    align-content: center;
+  }
+  .position-container{
+    padding: .5rem;
+  }
 }

@@ -31,19 +31,19 @@
           </ul>
         </section>
         <section class="sidebar-left-admin">
-        <ul><h3>Admin</h3>
-          <li><i class="fas fa-user-friends"></i></li>
-          <li><i class="fas fa-map-marker-alt"></i></li>
-          <li><i class="fas fa-sitemap"></i></li>
-          <li><i class="active-li fas fa-paste"></i></li>
-          <li><i class="fas fa-project-diagram"></i></li>
-        </ul>
+          <ul><h3>Admin</h3>
+            <li><i class="fas fa-user-friends"></i></li>
+            <li><i class="fas fa-map-marker-alt"></i></li>
+            <li><i class="fas fa-sitemap"></i></li>
+            <li><i class="active-li fas fa-paste"></i></li>
+            <li><i class="fas fa-project-diagram"></i></li>
+          </ul>
         </section>
-        <section class="sidebar-left-categories"></li>
+        <section class="sidebar-left-categories">
           <ul><h3>Categories</h3>
             <li><i class="yellow-checkbox fas fa-check-square"></i></li>
             <li><i class="blue-checkbox fas fa-square"></i></li>
-            <li><i class="red-checkbox fas fa-square"></i></li>
+            <li> <i class="red-checkbox fas fa-square"></i></li>
             <li><i class="green-checkbox fas fa-square"></i></li>
           </ul>
         </section>
@@ -60,10 +60,10 @@
         </section>
         <section class="sidebar-right-admin">
           <ul><h3>Admin</h3>
-            <li><a href="#">Users</a></li>
+            <li> <a href="#">Users</a></li>
             <li><a href="#">Locations</a></li>
             <li><a href="#">Workflows</a></li>
-            <li><a class = "active-link"href="#">Job Boards</a></li>
+            <li><a class="active-link" href="#">Job Boards</a></li>
             <li><a href="#">Social</a></li>
           </ul>
         </section>
@@ -71,37 +71,51 @@
           <ul><h3>Categories</h3>
             <li><a href="#">Administrative</a></li>
             <li><a href="#">Design</a></li>
-            <li><a href="#">Executive</a></li>
+            <li> <a href="#">Executive</a></li>
             <li><a href="#">Human Resources</a></li>
           </ul>
         </section>
       </section>
     </section>
-    </section>
+  </section>
   <main class="main-content">
     <header class="search-bar">
       <nav class="top-nav">
         <button class="search-btns hamburger" role="menu-button" aria-label="click to expand menu">
-            <i class="fas fa-caret-left"></i>
-            <i class="fas fa-bars"></i>
+          <i class="fas fa-caret-left"></i><i class="fas fa-bars"></i>
         </button>
         <input type="search" class="search-bar-literal" placeholder="Search for a job, task, or resume">
-        <button class="search-btns user-plus" aria-label="click to add this user as a friend"><i class="fas fa-user-plus"></i></button>
-        <button class="search-btns calendar" role="calendar-button" aria-label="click to view the calendar"><i class="far fa-calendar-alt"></i></button>
-        <button class="search-btns numpad" aria-label="click to expand the menu"><i class="fas fa-th"></i></button>
+        <button class="search-btns user-plus" aria-label="click to add this user as a friend">
+          <i class="fas fa-user-plus"></i>
+        </button>
+        <button class="search-btns calendar" role="calendar-button" aria-label="click to view the calendar">
+          <i class="far fa-calendar-alt"></i>
+        </button>
+        <button class="search-btns numpad" aria-label="click to expand the menu">
+          <i class="fas fa-th"></i>
+        </button>
       </nav>
       <section class="position-container">
         <section class="position-name-box">
-          <h1 aria-label="Position Header">Front-End Developer</h1>
-          <i class="fas fa-bars" id="secret-menu-button"></i>
-          <p class="location"><i class="fas fa-map-marker-alt"></i>Denver, Co &middot; <span class="preview" aria-label="preview this post">Preview this post</span></p>
+          <h1 aria-label="Position Header" role="header">Front-End Developer</h1>
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Denver, Co &middot; 
+            <span class="preview" aria-label="preview this post">Preview this post</span>
+          </p>
         </section>
         <section class="buttons-container">
           <div class="right-side-buttons">
-            <button class="open" aria-label="click to open the application menu"><i class="fas fa-circle"></i> Open</button>
-            <button class="bookmark" aria-label="click to open the bookmark menu"><i class="fas fa-bookmark"></i></button>
-            <button class="pencil" aria-label="click to write a note"><i class="fas fa-pencil-alt"></i></button>
-            <button class="trash" aria-label="click to throw this application away"><i class="fas fa-trash-alt"></i></button>
+            <button class="open" aria-label="click to open the application menu">
+              <i class="fas fa-circle"></i> Open
+            </button>
+            <button class="bookmark" aria-label="click to open the bookmark menu">
+              <i class="fas fa-bookmark"></i>
+            </button>
+            <button class="pencil" aria-label="click to write a note">
+              <i class="fas fa-pencil-alt"></i>
+            </button>
+            <button class="trash" aria-label="click to throw this application away">
+              <i class="fas fa-trash-alt"></i>
+            </button>
           </div>
         </section>
         <ul class="main-nav">
@@ -117,7 +131,7 @@
     </header>
     <section id="bottom half">
       <section class="summary-container">
-        <section class="charts-and-such">
+        <section class="svg-box">
           <figure class="circle-graphs">
             <svg viewbox="0 0 36 36" class="circular-chart applicants">
               <path class="circle-bg" d="M18 2.0845
@@ -149,90 +163,89 @@
               <text x="11" y="20" class="circle-numbers">912</text>
               <text x="9" y="25" class="circle-explain">Forwards</text>
             </svg>
-            <div class="bar-graph-box">
-              <figure class="bar-graph"></figure>
-              <img src="img/lolezmode.png" id="bar-graph" alt="bar graph">
-            </div>
           </figure>
-          <div class="totals-buttons">
-            <button class="total totals">Totals &middot; Out of 5,233 views</button>
-            <button class="total applicants-per-day">Applicants/Day</button>
-          </div>
         </section>
-      </section>
-      <section class="dividers">
-        <hr class="divider-line"><i class="fas fa-chevron-circle-up"></i><hr class="divider-line">
-      </section>
-      <section class="secondary-content">
-        <table class="information-table">
-          <tr>
-            <th class="th-left">Job Description</th>
-            <th class="th-right">
-              <button class="edit-button"><i class="fas fa-pencil-alt"></i>Edit</button>
-            </th>
-          </tr>
-          <tr>
-            <td class="td">Position Title</td>
-            <td class="td">Front-End Developer</td>
-          </tr>
-          <tr>
-            <td class="td">Location</td>
-            <td class="td">Denver, Co</td>
-          </tr>
-          <tr>
-            <td class="td">Employment-Type</td>
-            <td class="td">Full-time</td>
-          </tr>
-          <tr>
-            <td class="td">Experience</td>
-            <td class="td">Fresh</td>
-          </tr>
-          <tr>
-            <td class="td">Status</td>
-            <td class="td">Open</td>
-          </tr>
-          <tr>
-            <td class="td">Description</td>
-            <td class="td">The front-end developer creates interaction and user experience with scripts embedded in a site’s HTML.      Everything a visitor to your site sees, clicks, or uses to input or retrieve information is the work of the front-end
-              developer who creates client-side software that brings the site’s design to life. Scripts are downloaded by
-              the browser, processed, and then run apart from the server.</td>
-          </tr>
-          <tr>
-            <td class="td">Hiring Lead</td>
-            <td class="td">
-              <img src="img/gray.jpg" class="round-face-small" alt="a photo of the hiring manager for this position">
-              <span class="likethecolorgray">Gray Smith</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="td">Approved Salary</td>
-            <td class="td">$68,000</td>
-          </tr>
-        </table>
-        <aside class="right-side-mini-nav">
-          <div class="right-side-nav-container">
-            <section class="social-media-links">
-              <button class="social facebook-link"><i class="fab fa-facebook-f"></i>Post to Facebook</button>
-              <button class="social twitter-link"><i class="fab fa-twitter"></i>Tweet this Job</button>
-              <button class="social linkedin-link"><i class="fab fa-linkedin"></i>Post to LinkedIn</button>
-            </section>
-            <h5><i class="fas fa-globe"></i>Link to this Job</h5>
-            <p class="info-text" aria-label="click this to copy this job to your clipboard">Click copy to copy this job posting to your clipboard.</p>
-            <input type="text" class="link-input" placeholder="https://www.github.com/ims...">
-            <button class="copy-button" aria-label="click this button to copy the this job posting">Copy</button>
-            <h5><i class="fas fa-window-maximize"></i>Use the Button Widget.</h5>
-            <p class="info-text">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
-            <input type="text" class="link-input" placeholder="https://www.github.com/ims...">
-            <button class="copy-button" aria-label="click this button to copy the widget url that embeds this job posting to your website">Copy</button>
-            <h5><i class="fas fa-paper-plane"></i>Upload Resumes by Email</h5>
-            <p class="info-text">You can automatically upload multiple resumes to this job by emailing the address below.</p>
-            <input type="text" class="link-input email" placeholder="colorgray@gmail.com" aria-label="Enter your email below to upload resumes automatically">
-          </div>
-        </aside>
+        <section class = "bar-graph-container">
+            <figure class="bar-graph"></figure>
+            <img src="img/lolezmode.png" id="bar-graph" alt="bar graph">
+        </section>
+        <div class="totals">
+          <button class="total totals">Totals &middot; Out of 5,233 views</button>
+        </div>
+        <div class="totals2">
+          <button class="total applicants-per-day">Applicants/Day</button>
+        </div>
       </section>
     </section>
+    <section class="dividers">
+      <hr class="divider-line"><i class="fas fa-chevron-circle-up"></i><hr class="divider-line">
+    </section>
+    <section class="secondary-content">
+      <table class="information-table">
+        <tr>
+          <th class="th-left">Job Description</th>
+          <th class="th-right"><button class="edit-btn"><i class="fas fa-pencil-alt"></i>Edit</button></th>
+        </tr>
+        <tr>
+          <td class="td">Position Title</td>
+          <td class="td">Front-End Developer</td>
+        </tr>
+        <tr>
+          <td class="td">Location</td>
+          <td class="td">Denver, Co</td>
+        </tr>
+        <tr>
+          <td class="td">Employment-Type</td>
+          <td class="td">Full-time</td>
+        </tr>
+        <tr>
+          <td class="td">Experience</td>
+          <td class="td">Fresh</td>
+        </tr>
+        <tr>
+          <td class="td">Status</td>
+          <td class="td">Open</td>
+        </tr>
+        <tr>
+          <td class="td">Description</td>
+          <td class="td">The front-end developer creates interaction and user experience with scripts          embedded in a site’s HTML. Everything a visitor to your site sees, clicks, or uses to input or     retrieve information is the work of the front-end developer who creates client-side software       that brings the site’s design to life. Scripts are downloaded by the browser, processed, and       then run apart from the server.</td>
+        </tr>
+        <tr>
+          <td class="td">Hiring Lead</td>
+          <td class="td">
+            <img src="img/gray.jpg" class="round-face-small" alt="a photo of the hiring manager for this position">
+            <span class="likethecolorgray">Gray Smith</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="td">Approved Salary</td>
+          <td class="td">$68,000</td>
+        </tr>
+      </table>
+      <aside class="right-side-mini-nav">
+        <div class="right-side-nav-container">
+          <section class="social-media-links">
+            <button class="social facebook-link"><i class="fab fa-facebook-f"></i>Post to Facebook</button>
+            <button class="social twitter-link"><i class="fab fa-twitter"></i>Tweet this Job</button>
+            <button class="social linkedin-link"><i class="fab fa-linkedin"></i>Post to LinkedIn</button>
+          </section>
+          <h5>
+            <i class="fas fa-globe"></i>Link to this Job</h5>
+          <p class="info-text" aria-label="click this to copy this job to your clipboard">Click copy to copy this job posting to your clipboard.</p>
+          <input type="text" class="link-input" placeholder="https://www.github.com/ims...">
+          <button class="copy-button" aria-label="click this button to copy the this job posting">Copy</button>
+          <h5>
+            <i class="fas fa-window-maximize"></i>Use the Button Widget.</h5>
+          <p class="info-text">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+          <input type="text" class="link-input" placeholder="https://www.github.com/ims...">
+          <button class="copy-button" aria-label="click this button to copy the widget url that embeds this job posting to your website">Copy</button>
+          <h5>
+            <i class="fas fa-paper-plane"></i>Upload Resumes by Email</h5>
+          <p class="info-text">You can automatically upload multiple resumes to this job by emailing the address below.</p>
+          <input type="text" class="link-input email" placeholder="colorgray@gmail.com" aria-label="Enter your email below to upload resumes automatically">
+        </div>
+      </aside>
+    </section>
   </main>
-  </section>
 </body>
-
 </html>

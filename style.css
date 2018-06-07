@@ -52,6 +52,7 @@ ul{
 .main-nav:hover,
 .main-lis:hover {
   cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 
 .search-bar-literal {
@@ -73,6 +74,7 @@ ul{
   background-color: #16a4fa;
   color: #fcfafb;
   cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 
 .user-plus {
@@ -194,7 +196,9 @@ h1 {
   background-color: #31394a;
 }
 
-/* ========= Top Buttons =========  */
+/* ===== Position Container ====  */
+
+/* == Right side buttons ==  */
 
 .buttons-container {
   float: right;
@@ -225,6 +229,7 @@ h1 {
   background-color: #16a4fa;
   color: #fcfafb;
   cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 
 
@@ -234,20 +239,31 @@ main {
   background-color: #edf2f6;
 }
 
+.position-container{
+  display: grid;
+  grid-template-columns: 1fr 11rem;
+  padding-left: 50px;
+}
+
+.preview{
+  color: #16a4fa;
+}
+
 .main-nav {
-  margin: 5rem 0 0 0;
-  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 1px;
+  align-self: flex-end;
 }
 
 .main-nav li {
   display: inline;
-  margin-left: 20px;
-  padding: 0 10px 0.8rem 10px;
-  text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .main-nav li:hover {
-  border-bottom: 4px solid #16a4fa;
+  border-bottom: 3px solid #16a4fa;
   cursor: pointer;
   transition: 300ms ease-in-out;
 }
@@ -269,7 +285,7 @@ main {
 
 hr {
   margin: 2rem 2rem;
-  width: 30rem;
+  width: 50%;
 }
 
 .dividers i:hover {
@@ -280,10 +296,17 @@ hr {
 
 /* ========= Circle Chart Nightmare =========  */
 
-.charts-and-such {
+.summary-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.svg-box {
   background-color: #edf2f6;
   margin-top: 0.8rem;
 }
+
+/* === SVGs ===  */
 
 .circle-graphs {
   display: flex;
@@ -295,6 +318,7 @@ hr {
   font-size: 0.5rem;
   margin-left: 20px;
   min-width: 10rem;
+  max-width: 15rem;
 }
 
 .circle-explain {
@@ -329,9 +353,13 @@ hr {
   stroke: #b36ab3;
 }
 
-.totals-buttons {
-  padding: 2rem;
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 800;
+  }
 }
+
+/* == Graph Buttons ==  */
 
 .total {
   border-radius: 50px;
@@ -342,28 +370,27 @@ hr {
   text-transform: uppercase;
 }
 
+.totals-buttons {
+  padding: 2rem;
+}
+
 .total:hover {
   background-color: #16a4fa;
   color: #fcfafb;
 }
 
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 800;
-  }
+/* == Bar chart == */
+
+#bar-graph {
+  margin-left: 5rem;
+  max-width: 30rem;
 }
 
-/* ========= Infinitely Easier Bar Chart =========  */
-
-.bar-graph-box {
-  margin-left: 4rem;
-}
-
-/* ========= Table Styles =========  */
+/* ========= Table =========  */
 
 .secondary-content {
   display: grid;
-  grid-template-columns: 40rem 30rem;
+  grid-template-columns: 1fr 30rem;
 }
 
 table {
@@ -407,7 +434,7 @@ td {
   text-align: left;
 }
 
-.edit-button {
+.edit-btn {
   background-color: #7e8da7;
   border: none;
   color: white;
@@ -415,7 +442,7 @@ td {
   text-transform: uppercase;
 }
 
-.edit-button:hover {
+.edit-btn:hover {
   background-color: #9fadc4;
   cursor: pointer;
 }
@@ -426,12 +453,9 @@ th .fa-pencil-alt {
 
 /* ========= Bottom Right Nav =========  */
 
-.right-side-mini-nav {
-  margin-left: 40px;
-}
 
 .right-side-nav-container {
-  padding: 30px;
+  padding: 0 50px 20px 50px;
 }
 
 .social {

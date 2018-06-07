@@ -187,10 +187,13 @@ h1 {
   color: #eee;
 }
 
-.active-li, .active-link{
+#active-li {
+  border-left: 1px solid #16a4fa;
+}
+
+#active-li, .active-link{
   color: white;
   background-color: #31394a;
-  
 }
 
 /* ===== Position Container ====  */
@@ -572,14 +575,17 @@ h5 i{
     display: grid;
     grid-template-columns: 30rem 1fr;
   }
+  
   .circular-chart{
     min-width: 6rem;
     margin-left: auto;
     margin-right: auto;
   }
+
   .social i{
     padding-right: 2px;
   }
+
   .right-side-nav-container {
     padding: 0 20px 10px 20px;
   }
@@ -610,15 +616,17 @@ h5 i{
     display: grid;
     grid-template-columns: 1fr
   }
+
   .position-container{
     display: grid;
     grid-template-columns: 1fr;
     padding-left: 1rem;
   }
+
   .social {
     width: 32%;
   }
-  
+
   .main-nav{
     display: none;
   }
@@ -629,11 +637,13 @@ h5 i{
     border-radius: 50px;
     margin-top: .5rem;
     color: #7c7b80;
+    cursor: pointer;
   }
 
   .navigation i {
     padding-right: 10px;
   }
+
   .navigation:hover{
     background-color: #00aaef;
     color: white;
@@ -649,6 +659,7 @@ h5 i{
   .circular-chart{
     min-width: 10rem;
   }
+
   .svg-box {
     margin-left: auto;
     margin-right: auto;
@@ -660,6 +671,7 @@ h5 i{
     display: flex;
     max-width: 10rem;
   }
+
   .position-container{
     padding: .5rem;
   }

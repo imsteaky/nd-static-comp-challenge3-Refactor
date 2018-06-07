@@ -177,7 +177,7 @@ h1 {
 }
 
 .sidebar-left li:hover{
-  border-left: 1px solid #16a4fa;
+  border-left: 2px solid #16a4fa;
 }
 
 .sidebar li:hover, .sidebar a:hover{

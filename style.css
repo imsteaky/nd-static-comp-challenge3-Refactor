@@ -632,6 +632,10 @@ h5 i{
     padding-left: 1rem;
   }
 
+  .description-text{
+    font-size: .7rem;
+  }
+
   .social {
     width: 32%;
   }

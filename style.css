@@ -698,6 +698,11 @@ h5 i{
     max-width: 10rem;
   }
 
+  hr {
+    font-size: 1rem;
+    width: 70%;
+  }
+
   .position-container{
     padding: .5rem;
   }

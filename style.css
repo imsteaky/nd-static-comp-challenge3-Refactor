@@ -236,9 +236,9 @@ main {
 }
 
 .position-container{
+  padding-left: 50px;
   display: grid;
   grid-template-columns: 1fr 11rem;
-  padding-left: 50px;
 }
 
 .preview{
@@ -246,11 +246,11 @@ main {
 }
 
 .main-nav {
+  align-self: flex-end;
   display: flex;
   justify-content: space-between;
-  padding: 0;
   margin-bottom: 1px;
-  align-self: flex-end;
+  padding: 0;
 }
 
 .main-nav li {
@@ -581,11 +581,19 @@ h5 i{
   .social i{
     padding-right: 2px;
   }
-  .main-lis{
-    font-size: .6rem;
-  }
   .right-side-nav-container {
     padding: 0 20px 10px 20px;
+  }
+
+  .position-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 1rem;
+  }
+
+  .summary-container{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -593,9 +601,6 @@ h5 i{
   .secondary-content {
     display: grid;
     grid-template-columns: 1fr
-  }
-  .circular-chart{
-    min-width: 4rem;
   }
   .position-container{
     display: grid;
@@ -608,12 +613,9 @@ h5 i{
   table {
     margin: 1rem;
   }
-  .main-lis{
-    font-size: .3rem;
-  }
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 614px){
 
   .circular-chart{
     min-width: 10rem;
@@ -622,17 +624,31 @@ h5 i{
     margin-left: auto;
     margin-right: auto;
   }
-  .summary-container{
-    display: grid;
-    grid-template-columns: 1fr;
+
+  .main-lis{
+    font-size: .7rem;
   }
+
   .circle-graphs {
-    display: flex;
-    flex-direction: column;
-    max-width: 10rem;
     align-content: center;
+    flex-direction: column;
+    display: flex;
+    max-width: 10rem;
   }
   .position-container{
     padding: .5rem;
   }
+  
+}
+
+@media only screen and (max-width: 614px){
+   .main-lis{
+    font-size: .6rem;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .main-lis{
+   font-size: .6rem;
+ }
 }

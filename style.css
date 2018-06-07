@@ -23,7 +23,7 @@ ul{
 
 /* ========= Top Nav =========  */
 
-#secret-menu-button {
+.navigation{
   display: none;
 }
 
@@ -594,9 +594,18 @@ h5 i{
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .applicants-per-day{
+    display: none;
+  }
+
+  .totals{
+    padding-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 700px){
+
   .secondary-content {
     display: grid;
     grid-template-columns: 1fr
@@ -609,6 +618,26 @@ h5 i{
   .social {
     width: 32%;
   }
+  .main-nav{
+    display: none;
+  }
+
+  .navigation{
+    display: block;
+    padding: 4px;
+    border-radius: 50px;
+    margin-top: .5rem;
+    color: #7c7b80;
+  }
+
+  .navigation i {
+    padding-right: 10px;
+  }
+  .navigation:hover{
+    background-color: #00aaef;
+    color: white;
+  }
+
   table {
     margin: 1rem;
   }
@@ -624,10 +653,6 @@ h5 i{
     margin-right: auto;
   }
 
-  .main-lis{
-    font-size: .7rem;
-  }
-
   .circle-graphs {
     align-content: center;
     flex-direction: column;
@@ -638,17 +663,4 @@ h5 i{
     padding: .5rem;
   }
   
-}
-
-@media only screen and (max-width: 614px){
-   .main-lis{
-    font-size: .6rem;
-  }
-}
-
-@media only screen and (max-width: 400px){
-  .main-lis{
-   font-size: .3rem;
-   padding: 0;
- }
 }

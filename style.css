@@ -142,6 +142,7 @@ h1 {
 
 .sidebar-left li{
   padding: 10px 10px 10px 0;
+  padding-left: 15px;
 }
 
 .sidebar-left li a{
@@ -151,7 +152,7 @@ h1 {
 /* = Sidebar Left Side =  */
 
 .sidebar-left ul{
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .sidebar-left h3{
@@ -173,6 +174,10 @@ h1 {
 
 .green-checkbox{
   color: #099880
+}
+
+.sidebar-left li:hover{
+  border-left: 1px solid #16a4fa;
 }
 
 .sidebar li:hover, .sidebar a:hover{

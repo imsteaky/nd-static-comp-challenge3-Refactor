@@ -679,6 +679,10 @@ h5 i{
   table {
     margin: 1rem;
   }
+
+  .social{
+    font-size: .8rem;
+  }
 }
 
 @media only screen and (max-width: 614px){
